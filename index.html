@@ -1,1 +1,312 @@
-
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..b54e0b63770cabe2743b3e95f412c38476fc4f2a
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,306 @@
++<!doctype html>
++<html lang="en">
++  <head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <title>CommunityCircle — Screen-light local meetups for families</title>
++    <meta
++      name="description"
++      content="CommunityCircle helps parents organize safe, family-friendly offline activities with privacy-first tools and clear community guidelines."
++    />
++    <link rel="preconnect" href="https://fonts.googleapis.com" />
++    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
++    <link
++      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
++      rel="stylesheet"
++    />
++    <link rel="stylesheet" href="styles.css" />
++  </head>
++  <body>
++    <a class="skip-link" href="#main-content">Skip to main content</a>
++
++    <header class="site-header" id="top">
++      <div class="container nav-wrap">
++        <a class="logo" href="#top" aria-label="CommunityCircle home">
++          <span class="logo-mark" aria-hidden="true">◎</span>
++          <span>CommunityCircle</span>
++        </a>
++
++        <button
++          class="menu-toggle"
++          id="menu-toggle"
++          aria-expanded="false"
++          aria-controls="primary-nav"
++          aria-label="Toggle navigation menu"
++        >
++          ☰
++        </button>
++
++        <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
++          <a href="#how-it-works">How it works</a>
++          <a href="#safety">Safety</a>
++          <a href="#events">Events</a>
++          <a href="#faq-contact">FAQ</a>
++        </nav>
++      </div>
++    </header>
++
++    <main id="main-content">
++      <section class="hero section">
++        <div class="container hero-grid">
++          <div class="hero-copy">
++            <p class="eyebrow">Meet nearby families. Keep it screen-light.</p>
++            <h1>Safe local meetups for parents and kids, built for real life.</h1>
++            <p class="subhead">
++              CommunityCircle helps families discover and host friendly offline activities in
++              neighborhoods around Philadelphia — with privacy-first details, trusted hosts,
++              and clear anti-hate rules.
++            </p>
++            <div class="hero-ctas">
++              <a class="btn btn-primary" href="#events">Find meetups near me</a>
++              <a class="btn btn-secondary" href="#contact">Host an event</a>
++            </div>
++            <p class="promise-badge" role="note" aria-label="Screen-light promise">
++              🌤️ Screen-light promise: RSVP in seconds, then get back to play.
++            </p>
++          </div>
++
++          <div class="hero-card" aria-label="Example meetup card">
++            <h2>Today nearby</h2>
++            <p class="hero-card-title">Stroller Walk + Story Time</p>
++            <ul>
++              <li><strong>Neighborhood:</strong> Fairmount</li>
++              <li><strong>Ages:</strong> 0–4</li>
++              <li><strong>Format:</strong> Outdoor • No devices</li>
++              <li><strong>Host trust:</strong> Email verified</li>
++            </ul>
++          </div>
++        </div>
++      </section>
++
++      <section id="how-it-works" class="section">
++        <div class="container">
++          <div class="section-head">
++            <p class="eyebrow">How it works</p>
++            <h2>From “maybe someday” to “see you at 10” in three simple steps.</h2>
++          </div>
++
++          <div class="steps-grid" role="list">
++            <article class="step-card" role="listitem">
++              <h3>1) Browse local activities</h3>
++              <p>
++                See meetups by neighborhood, age range, and indoor/outdoor preference. No exact
++                addresses shown before RSVP.
++              </p>
++            </article>
++            <article class="step-card" role="listitem">
++              <h3>2) RSVP with privacy-first details</h3>
++              <p>
++                Join in one tap, view capacity status, and get private location notes only after
++                confirming attendance.
++              </p>
++            </article>
++            <article class="step-card" role="listitem">
++              <h3>3) Put your phone away</h3>
++              <p>
++                Built-in offline nudges encourage device-light, face-to-face connection with kids
++                and neighbors.
++              </p>
++            </article>
++            <article class="step-card" role="listitem">
++              <h3>4) Host when you're ready</h3>
++              <p>
++                Start with email verification. Add optional phone verification to unlock additional
++                hosting options.
++              </p>
++            </article>
++          </div>
++        </div>
++      </section>
++
++      <section id="safety" class="section section-soft">
++        <div class="container safety-layout">
++          <div>
++            <div class="section-head">
++              <p class="eyebrow">Safety & verification</p>
++              <h2>Trust badges that are simple, clear, and family-focused.</h2>
++            </div>
++
++            <div class="trust-list" aria-label="Trust badge explanation">
++              <p><strong>Email verified:</strong> Required to host any event.</p>
++              <p><strong>Phone verified:</strong> Optional, unlocks more hosting capacity.</p>
++              <p><strong>ID verified:</strong> Coming soon (optional badge in progress).</p>
++            </div>
++          </div>
++
++          <aside class="moderation-card" aria-label="Moderation policies">
++            <h3>Community guidelines at a glance</h3>
++            <ul>
++              <li>No hate or harassment.</li>
++              <li>No politics or partisan debate.</li>
++              <li>No doxxing or sharing private personal info.</li>
++              <li>No adult content.</li>
++              <li>No spam or self-promo flooding.</li>
++            </ul>
++            <p>
++              CommunityCircle is explicitly <strong>apolitical</strong> and
++              <strong>anti-hate</strong> to keep local spaces safe and welcoming for families.
++            </p>
++          </aside>
++        </div>
++      </section>
++
++      <section id="events" class="section">
++        <div class="container">
++          <div class="section-head">
++            <p class="eyebrow">Sample events near Philadelphia</p>
++            <h2>Tap a meetup to preview details and try the RSVP flow.</h2>
++          </div>
++          <div id="events-grid" class="events-grid" aria-live="polite"></div>
++        </div>
++      </section>
++
++      <section class="section section-soft" id="activities">
++        <div class="container">
++          <div class="section-head">
++            <p class="eyebrow">Popular activities this week</p>
++            <h2>What families are choosing most around town.</h2>
++          </div>
++
++          <div class="chart" role="img" aria-label="Bar chart of activity popularity">
++            <div class="bar" style="--value: 84%">
++              <span>Walks</span>
++              <strong>84</strong>
++            </div>
++            <div class="bar" style="--value: 75%">
++              <span>Playground</span>
++              <strong>75</strong>
++            </div>
++            <div class="bar" style="--value: 62%">
++              <span>Library</span>
++              <strong>62</strong>
++            </div>
++            <div class="bar" style="--value: 58%">
++              <span>Crafts</span>
++              <strong>58</strong>
++            </div>
++            <div class="bar" style="--value: 69%">
++              <span>Sports</span>
++              <strong>69</strong>
++            </div>
++          </div>
++        </div>
++      </section>
++
++      <section id="faq-contact" class="section">
++        <div class="container faq-contact-grid">
++          <div>
++            <div class="section-head">
++              <p class="eyebrow">FAQ</p>
++              <h2>Quick answers for busy parents.</h2>
++            </div>
++
++            <div class="faq-list" id="faq-list">
++              <article class="faq-item">
++                <h3>
++                  <button aria-expanded="false" aria-controls="faq-panel-1" id="faq-btn-1">
++                    Is CommunityCircle free to use?
++                  </button>
++                </h3>
++                <div id="faq-panel-1" role="region" aria-labelledby="faq-btn-1" hidden>
++                  <p>
++                    Yes. Browsing and RSVPing are free. Optional host tools may be added in the
++                    future.
++                  </p>
++                </div>
++              </article>
++
++              <article class="faq-item">
++                <h3>
++                  <button aria-expanded="false" aria-controls="faq-panel-2" id="faq-btn-2">
++                    Do you show exact event addresses publicly?
++                  </button>
++                </h3>
++                <div id="faq-panel-2" role="region" aria-labelledby="faq-btn-2" hidden>
++                  <p>
++                    No. We display public location labels and approximate distance. Private notes
++                    appear only after RSVP confirmation.
++                  </p>
++                </div>
++              </article>
++
++              <article class="faq-item">
++                <h3>
++                  <button aria-expanded="false" aria-controls="faq-panel-3" id="faq-btn-3">
++                    What content is not allowed?
++                  </button>
++                </h3>
++                <div id="faq-panel-3" role="region" aria-labelledby="faq-btn-3" hidden>
++                  <p>
++                    We are apolitical and anti-hate. No hate, harassment, politics, doxxing, adult
++                    content, or spam.
++                  </p>
++                </div>
++              </article>
++            </div>
++          </div>
++
++          <div id="contact" class="contact-card">
++            <div class="section-head compact">
++              <p class="eyebrow">Contact</p>
++              <h2>Share a question or host idea</h2>
++            </div>
++
++            <form id="contact-form" novalidate>
++              <label>
++                Name
++                <input type="text" name="name" required />
++              </label>
++              <label>
++                Email
++                <input type="email" name="email" required />
++              </label>
++              <label>
++                Message
++                <textarea name="message" rows="4" required></textarea>
++              </label>
++              <button class="btn btn-primary" type="submit">Save message</button>
++              <p id="form-errors" class="form-errors" aria-live="polite"></p>
++            </form>
++          </div>
++        </div>
++      </section>
++    </main>
++
++    <footer class="site-footer">
++      <div class="container footer-row">
++        <p>© <span id="year"></span> CommunityCircle</p>
++        <div class="footer-links">
++          <a href="#" data-doc="guidelines">Guidelines</a>
++          <a href="#" data-doc="privacy">Privacy</a>
++          <a href="#" data-doc="terms">Terms</a>
++        </div>
++      </div>
++    </footer>
++
++    <div id="event-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
++      <div class="modal-backdrop" data-close-modal="true"></div>
++      <div class="modal-panel" role="document">
++        <button class="modal-close" id="modal-close" aria-label="Close dialog">✕</button>
++        <div id="modal-content"></div>
++      </div>
++    </div>
++
++    <div id="doc-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="doc-title" hidden>
++      <div class="modal-backdrop" data-close-doc="true"></div>
++      <div class="modal-panel" role="document">
++        <button class="modal-close" id="doc-close" aria-label="Close document">✕</button>
++        <div id="doc-content"></div>
++      </div>
++    </div>
++
++    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
++
++    <script src="app.js"></script>
++  </body>
++</html>
