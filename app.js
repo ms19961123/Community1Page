@@ -1,9 +1,3 @@
-diff --git a/app.js b/app.js
-new file mode 100644
-index 0000000000000000000000000000000000000000..951a1b39bdbe64cf549d2b449b4e9e988fbc73af
---- /dev/null
-+++ b/app.js
-@@ -0,0 +1,501 @@
 +const events = [
 +  {
 +    id: 1,
